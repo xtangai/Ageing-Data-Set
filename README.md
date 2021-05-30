@@ -44,7 +44,7 @@ CWTC -- Capacity of waiting after charging
 
 *******************************************************************
 The code was tested with Matlab 2015b.
-You may need to run into different results when test the code for multiple times, as the networks are randomly initialised.
+You may run into different results when test the code for multiple times, as the networks are randomly initialised.
 
 **Please contact Dr. Kailong Liu <kliu02@qub.ac.uk> if you have any questions / bug reports**
 **Please contact Dr. Xiaopeng Tang <xtangai@connect.ust.hk> if you have any questions / bug reports**
