@@ -34,13 +34,16 @@ CCDCHV -- Voltage of constant current discharging
 CCDCHI  -- Current of constant current discharging
 CCDCHC -- Capacity of constant current discharging
 
-DWTV -- Voltage of waiting after discharging
-DWTI  -- Current of waiting after discharging
-DWTC -- Capacity of waiting after discharging
 
-CWTV -- Voltage of waiting after charging
-CWTI  -- Current of waiting after charging
-CWTC -- Capacity of waiting after charging
+**The data of the previous waiting profile after charging/discharging are recorded together with the data of the target waiting profile after discharging/charging. We are sorry for this error. For voltage of waiting profile after discharging, its value should be (in general) lower than 3.9V, while for voltage of waiting profile after charging, its value should be (in general) greater than 3.9V. You may need to handle the data accordingly.**
+
+DWTV -- Voltage of waiting after discharging  (Please ignore the data corresponding to voltage > 3.90V)
+DWTI  -- Current of waiting after discharging (Please ignore the data corresponding to voltage > 3.90V)
+DWTC -- Capacity of waiting after discharging (Please ignore the data corresponding to voltage > 3.90V)
+
+CWTV -- Voltage of waiting after charging  (Please ingore the data corresponding to voltage < 3.90V)
+CWTI  -- Current of waiting after charging (Please ignore the data corresponding to voltage < 3.90V)
+CWTC -- Capacity of waiting after charging (Please ignore the data corresponding to voltage < 3.90V)
 
 *******************************************************************
 The code was tested with Matlab 2015b.
@@ -48,3 +51,6 @@ You may run into different results when test the code for multiple times, as the
 
 **Please contact Dr. Kailong Liu <kliu02@qub.ac.uk> if you have any questions / bug reports**
 **Please contact Dr. Xiaopeng Tang <xtangai@connect.ust.hk> if you have any questions / bug reports**
+
+
+**Last update 2021-09-28 -- Descriptions for CWTV and DWTV are updated -- By Xiaopeng Tang**
